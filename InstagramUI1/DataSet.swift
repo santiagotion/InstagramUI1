@@ -27,7 +27,7 @@ class DataSet {
         JobImpersonCategory(title: "huoii23", imageName:"3"),
         JobImpersonCategory(title: "lolo545", imageName:"4"),
         JobImpersonCategory(title: "glaj57", imageName:"43"),
-        JobImpersonCategory(title: "kokism21", imageName:"39"),
+        JobImpersonCategory(title: "kokism21", imageName:"38"),
         
         
         
