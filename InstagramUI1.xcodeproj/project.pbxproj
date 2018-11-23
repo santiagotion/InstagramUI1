@@ -17,6 +17,8 @@
 		CE1B2A6F21A632BD002413FF /* insideCollectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2A6E21A632BD002413FF /* insideCollectionCollectionViewCell.swift */; };
 		CE1B2A7121A88501002413FF /* StoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2A7021A88501002413FF /* StoriesCell.swift */; };
 		CE1B2A7321A8866E002413FF /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2A7221A8866E002413FF /* FeedCell.swift */; };
+		CE1B2A7521A88A18002413FF /* JobImpersonCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2A7421A88A18002413FF /* JobImpersonCategory.swift */; };
+		CE1B2A7721A88A68002413FF /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2A7621A88A68002413FF /* DataSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		CE1B2A6E21A632BD002413FF /* insideCollectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = insideCollectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE1B2A7021A88501002413FF /* StoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesCell.swift; sourceTree = "<group>"; };
 		CE1B2A7221A8866E002413FF /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		CE1B2A7421A88A18002413FF /* JobImpersonCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobImpersonCategory.swift; sourceTree = "<group>"; };
+		CE1B2A7621A88A68002413FF /* DataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +72,9 @@
 				CE1B2A5821A608C0002413FF /* ViewController.swift */,
 				CE1B2A6A21A630CD002413FF /* PopulaInpersoTableCell.swift */,
 				CE1B2A6C21A6317B002413FF /* InPersonneCatergoryVC.swift */,
+				CE1B2A7421A88A18002413FF /* JobImpersonCategory.swift */,
 				CE1B2A7021A88501002413FF /* StoriesCell.swift */,
+				CE1B2A7621A88A68002413FF /* DataSet.swift */,
 				CE1B2A7221A8866E002413FF /* FeedCell.swift */,
 				CE1B2A5A21A608C0002413FF /* Main.storyboard */,
 				CE1B2A6E21A632BD002413FF /* insideCollectionCollectionViewCell.swift */,
@@ -152,6 +158,8 @@
 			files = (
 				CE1B2A7321A8866E002413FF /* FeedCell.swift in Sources */,
 				CE1B2A6D21A6317B002413FF /* InPersonneCatergoryVC.swift in Sources */,
+				CE1B2A7521A88A18002413FF /* JobImpersonCategory.swift in Sources */,
+				CE1B2A7721A88A68002413FF /* DataSet.swift in Sources */,
 				CE1B2A5921A608C0002413FF /* ViewController.swift in Sources */,
 				CE1B2A6B21A630CD002413FF /* PopulaInpersoTableCell.swift in Sources */,
 				CE1B2A7121A88501002413FF /* StoriesCell.swift in Sources */,

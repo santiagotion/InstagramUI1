@@ -233,6 +233,10 @@
                                                                 <constraint firstAttribute="bottom" secondItem="ISV-f8-zLo" secondAttribute="bottom" id="hRr-ou-unv"/>
                                                                 <constraint firstAttribute="trailing" secondItem="ISV-f8-zLo" secondAttribute="trailing" id="mNf-Ib-75L"/>
                                                             </constraints>
+                                                            <connections>
+                                                                <outlet property="profilImage" destination="gD4-uL-3ug" id="fbG-Yb-lzh"/>
+                                                                <outlet property="username" destination="aSR-EK-dTh" id="mdb-Bq-Zch"/>
+                                                            </connections>
                                                         </collectionViewCell>
                                                     </cells>
                                                     <connections>
@@ -535,6 +539,10 @@
                                                 <constraint firstAttribute="bottom" secondItem="Bae-yg-OV3" secondAttribute="bottom" id="s3O-Ir-MW8"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="PostImage" destination="K2o-h4-WJl" id="9pa-8z-hvW"/>
+                                            <outlet property="username" destination="7e0-4g-3qX" id="DWd-7Y-p0b"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

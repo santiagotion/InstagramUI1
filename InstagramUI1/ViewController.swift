@@ -9,9 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    let data = DataSet()
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 1 {
-            return 8
+            return data.categories2.count
         }
         return 1
     }
@@ -22,16 +25,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 1 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PopulaInpersoTableCell2", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PopulaInpersoTableCell2", for: indexPath) as! PopulaInpersoTableCell
+            cell.configureCell(category: data.categories2[indexPath.row])
         return cell
         }
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PopulaInpersoTableCell", for: indexPath) as! PopulaInpersoTableCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PopulaInpersoTableCell", for: indexPath)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if section == 1 {
-            return 10
+            return data.categories.count
         }
         return 1
         
@@ -47,6 +51,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         if indexPath.section == 1 {
             
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StoriesCell", for: indexPath) as! StoriesCell
+         cell.configureCell(category: data.categories[indexPath.row])
         return cell
     }
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "insideCollectionCollectionViewCell", for: indexPath) as! insideCollectionCollectionViewCell

@@ -10,6 +10,8 @@ import UIKit
 
 class PopulaInpersoTableCell: UITableViewCell {
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var PostImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -20,6 +22,10 @@ class PopulaInpersoTableCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    func configureCell(category: JobImpersonCategory) {
+        PostImage.image = UIImage(named: category.imageName)
+        username.text = category.title
     }
 
 }
