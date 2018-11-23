@@ -129,7 +129,7 @@
                                                                 <constraint firstAttribute="trailing" secondItem="RTd-e1-QWn" secondAttribute="trailing" constant="10" id="sFw-8w-m9U"/>
                                                             </constraints>
                                                         </collectionViewCell>
-                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="insideCollectionCollectionViewCell2" id="AEj-Cx-VOj" customClass="insideCollectionCollectionViewCell" customModule="InstagramUI1" customModuleProvider="target">
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StoriesCell" id="AEj-Cx-VOj" customClass="StoriesCell" customModule="InstagramUI1" customModuleProvider="target">
                                                             <rect key="frame" x="84" y="6.666666666666667" width="84" height="91"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">

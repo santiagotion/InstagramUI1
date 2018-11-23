@@ -15,6 +15,8 @@
 		CE1B2A6B21A630CD002413FF /* PopulaInpersoTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2A6A21A630CD002413FF /* PopulaInpersoTableCell.swift */; };
 		CE1B2A6D21A6317B002413FF /* InPersonneCatergoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2A6C21A6317B002413FF /* InPersonneCatergoryVC.swift */; };
 		CE1B2A6F21A632BD002413FF /* insideCollectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2A6E21A632BD002413FF /* insideCollectionCollectionViewCell.swift */; };
+		CE1B2A7121A88501002413FF /* StoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2A7021A88501002413FF /* StoriesCell.swift */; };
+		CE1B2A7321A8866E002413FF /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2A7221A8866E002413FF /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		CE1B2A6A21A630CD002413FF /* PopulaInpersoTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopulaInpersoTableCell.swift; sourceTree = "<group>"; };
 		CE1B2A6C21A6317B002413FF /* InPersonneCatergoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InPersonneCatergoryVC.swift; sourceTree = "<group>"; };
 		CE1B2A6E21A632BD002413FF /* insideCollectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = insideCollectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE1B2A7021A88501002413FF /* StoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesCell.swift; sourceTree = "<group>"; };
+		CE1B2A7221A8866E002413FF /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				CE1B2A5821A608C0002413FF /* ViewController.swift */,
 				CE1B2A6A21A630CD002413FF /* PopulaInpersoTableCell.swift */,
 				CE1B2A6C21A6317B002413FF /* InPersonneCatergoryVC.swift */,
+				CE1B2A7021A88501002413FF /* StoriesCell.swift */,
+				CE1B2A7221A8866E002413FF /* FeedCell.swift */,
 				CE1B2A5A21A608C0002413FF /* Main.storyboard */,
 				CE1B2A6E21A632BD002413FF /* insideCollectionCollectionViewCell.swift */,
 				CE1B2A5D21A608C6002413FF /* Assets.xcassets */,
@@ -144,9 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1B2A7321A8866E002413FF /* FeedCell.swift in Sources */,
 				CE1B2A6D21A6317B002413FF /* InPersonneCatergoryVC.swift in Sources */,
 				CE1B2A5921A608C0002413FF /* ViewController.swift in Sources */,
 				CE1B2A6B21A630CD002413FF /* PopulaInpersoTableCell.swift in Sources */,
+				CE1B2A7121A88501002413FF /* StoriesCell.swift in Sources */,
 				CE1B2A5721A608C0002413FF /* AppDelegate.swift in Sources */,
 				CE1B2A6F21A632BD002413FF /* insideCollectionCollectionViewCell.swift in Sources */,
 			);

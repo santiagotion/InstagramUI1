@@ -46,7 +46,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.section == 1 {
             
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "insideCollectionCollectionViewCell2", for: indexPath) as! insideCollectionCollectionViewCell
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "StoriesCell", for: indexPath) as! StoriesCell
         return cell
     }
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "insideCollectionCollectionViewCell", for: indexPath) as! insideCollectionCollectionViewCell
