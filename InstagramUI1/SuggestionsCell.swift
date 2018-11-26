@@ -11,6 +11,8 @@ import UIKit
 class SuggestionsCell: UICollectionViewCell {
     @IBOutlet weak var profillImage: UIImageView!
     @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var suggestionPhoto: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         

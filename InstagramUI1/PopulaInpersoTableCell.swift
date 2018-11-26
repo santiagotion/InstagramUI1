@@ -33,7 +33,7 @@ class PopulaInpersoTableCell: UITableViewCell {
 
 extension PopulaInpersoTableCell {
     
-    func setCollectionView  <D: UICollectionViewDelegate & UICollectionViewDataSource> (_ dataSourceDelegate: D, forRow row:Int) {
+    func setaCollectionView  <D: UICollectionViewDelegate & UICollectionViewDataSource> (_ dataSourceDelegate: D, forRow row:Int) {
         collectionView.delegate = dataSourceDelegate
         collectionView.dataSource = dataSourceDelegate
         collectionView.reloadData()

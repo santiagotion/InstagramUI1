@@ -9,5 +9,12 @@
 import UIKit
 
 class FeedCell: UICollectionViewCell {
+    @IBOutlet weak var imgaView: UIImageView!
     
+    
+    
+    func configureCell(category: JobImpersonCategory) {
+        imgaView.image = UIImage(named: category.imageName)
+        
+    }
 }

@@ -19,6 +19,9 @@
 		CE1B2A7321A8866E002413FF /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2A7221A8866E002413FF /* FeedCell.swift */; };
 		CE1B2A7521A88A18002413FF /* JobImpersonCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2A7421A88A18002413FF /* JobImpersonCategory.swift */; };
 		CE1B2A7721A88A68002413FF /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1B2A7621A88A68002413FF /* DataSet.swift */; };
+		CE20AB5621AAF22A004E66EB /* UserInfonSugTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20AB5521AAF22A004E66EB /* UserInfonSugTableCell.swift */; };
+		CE20AB5821AB4473004E66EB /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20AB5721AB4473004E66EB /* PhotoTableViewCell.swift */; };
+		CE20AB5A21AB7153004E66EB /* SuggestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE20AB5921AB7153004E66EB /* SuggestionVC.swift */; };
 		CE6E790A21A8DA250004796E /* UserProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E790921A8DA250004796E /* UserProfileVC.swift */; };
 		CE6E790C21A8E9260004796E /* SuggestionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6E790B21A8E9260004796E /* SuggestionsCell.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +41,9 @@
 		CE1B2A7221A8866E002413FF /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		CE1B2A7421A88A18002413FF /* JobImpersonCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobImpersonCategory.swift; sourceTree = "<group>"; };
 		CE1B2A7621A88A68002413FF /* DataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
+		CE20AB5521AAF22A004E66EB /* UserInfonSugTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfonSugTableCell.swift; sourceTree = "<group>"; };
+		CE20AB5721AB4473004E66EB /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		CE20AB5921AB7153004E66EB /* SuggestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionVC.swift; sourceTree = "<group>"; };
 		CE6E790921A8DA250004796E /* UserProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileVC.swift; sourceTree = "<group>"; };
 		CE6E790B21A8E9260004796E /* SuggestionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,7 +87,10 @@
 				CE1B2A7021A88501002413FF /* StoriesCell.swift */,
 				CE1B2A7621A88A68002413FF /* DataSet.swift */,
 				CE1B2A7221A8866E002413FF /* FeedCell.swift */,
+				CE20AB5521AAF22A004E66EB /* UserInfonSugTableCell.swift */,
 				CE1B2A5A21A608C0002413FF /* Main.storyboard */,
+				CE20AB5921AB7153004E66EB /* SuggestionVC.swift */,
+				CE20AB5721AB4473004E66EB /* PhotoTableViewCell.swift */,
 				CE6E790B21A8E9260004796E /* SuggestionsCell.swift */,
 				CE1B2A6E21A632BD002413FF /* insideCollectionCollectionViewCell.swift */,
 				CE1B2A5D21A608C6002413FF /* Assets.xcassets */,
@@ -162,8 +171,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE20AB5A21AB7153004E66EB /* SuggestionVC.swift in Sources */,
 				CE1B2A7321A8866E002413FF /* FeedCell.swift in Sources */,
 				CE1B2A6D21A6317B002413FF /* InPersonneCatergoryVC.swift in Sources */,
+				CE20AB5621AAF22A004E66EB /* UserInfonSugTableCell.swift in Sources */,
 				CE1B2A7521A88A18002413FF /* JobImpersonCategory.swift in Sources */,
 				CE6E790A21A8DA250004796E /* UserProfileVC.swift in Sources */,
 				CE1B2A7721A88A68002413FF /* DataSet.swift in Sources */,
@@ -171,6 +182,7 @@
 				CE1B2A6B21A630CD002413FF /* PopulaInpersoTableCell.swift in Sources */,
 				CE1B2A7121A88501002413FF /* StoriesCell.swift in Sources */,
 				CE6E790C21A8E9260004796E /* SuggestionsCell.swift in Sources */,
+				CE20AB5821AB4473004E66EB /* PhotoTableViewCell.swift in Sources */,
 				CE1B2A5721A608C0002413FF /* AppDelegate.swift in Sources */,
 				CE1B2A6F21A632BD002413FF /* insideCollectionCollectionViewCell.swift in Sources */,
 			);
