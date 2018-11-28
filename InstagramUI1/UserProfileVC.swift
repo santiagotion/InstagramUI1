@@ -15,7 +15,9 @@ class UserProfileVC: UIViewController, UICollectionViewDelegate, UICollectionVie
     @IBOutlet weak var sugggestioonBtn: UIButton!
     let data = DataSet()
     
-
+    @IBOutlet weak var zombi: NSLayoutConstraint!
+    
+    @IBOutlet weak var collectionView2: UICollectionView!
     @IBOutlet weak var suggestionBtnOutlet: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var undersuggetionCollectionView: UIView!
@@ -30,6 +32,12 @@ class UserProfileVC: UIViewController, UICollectionViewDelegate, UICollectionVie
   
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        if collectionView == collectionView2 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "suggestionsCell", for: indexPath) as! SuggestionsCell
+            cell.configureCell(category: data.categories2[indexPath.row])
+            return cell
+        }
 
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photoCell", for: indexPath) as! FeedCell
         cell.configureCell(category: data.categories2[indexPath.row])
@@ -47,7 +55,8 @@ class UserProfileVC: UIViewController, UICollectionViewDelegate, UICollectionVie
     override func viewDidLoad() {
         super.viewDidLoad()
         desuggestionBtnOutlet.isHidden = true
-        
+        self.heithConst.constant = 440
+        self.zombi.constant = 0
         
 // UIView.animate(withDuration: 0.1, animations: {self.profilInformationView.frame.origin.y -= 250}, completion: nil)
 //        collectionView.isHidden = true
@@ -77,21 +86,33 @@ class UserProfileVC: UIViewController, UICollectionViewDelegate, UICollectionVie
     @IBAction func desuggestionBtn(_ sender: Any) {
 //         UIView.animate(withDuration: 1, animations: {self.collectionView.frame.origin.y -= 296}, completion: nil)
         desuggestionBtnOutlet.isHidden = true
-        self.heithConst.constant = 433
+        self.heithConst.constant = 440
+        self.zombi.constant = 0
     }
     
     @IBAction func suggestionBtn(_ sender: Any) {
-        self.heithConst.constant = 170
+        self.heithConst.constant = 198
         
         desuggestionBtnOutlet.isHidden = false
 //            = 175
-        
+        self.zombi.constant = 243
 //
 //            UIView.animate(withDuration: 1, animations: {self.collectionView.frame.origin.y -= -263}, completion: nil)
        
     }
     
 
-  
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        let contentHeight = scrollView.contentSize.height
+        print("offsetY: \(offsetY) | contentHeight: \(contentHeight)")
+        
+        
+        if offsetY > 5{
+            self.heithConst.constant = 440
+            desuggestionBtnOutlet.isHidden = true
+            self.zombi.constant = 0
+        }
+    }
 
 }
