@@ -12,8 +12,9 @@ class Profillll2222VVCC: UIViewController, UICollectionViewDataSource, UICollect
     
     @IBOutlet weak var jhu: NSLayoutConstraint!
     let data = DataSet()
-    
+//    var selectedRecipe = ""
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var profilImage: UIImageView!
     
     
     
@@ -53,6 +54,10 @@ let layout = UICollectionViewFlowLayout()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        profilImage.image = UIImage(named: selectedRecipe.imageName)
+//        recipeTitle.text = selectedRecipe.title
+//        recipeInstructions.text = selectedRecipe.instructions
         
         collectionView.delegate = self
         collectionView.dataSource = self

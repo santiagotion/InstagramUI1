@@ -27,6 +27,7 @@ class StoriesCell: UICollectionViewCell {
     
     func configureCell(category: JobImpersonCategory) {
         profilImage.image = UIImage(named: category.imageName)
+        
         username.text = category.title
     }
     

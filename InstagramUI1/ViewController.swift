@@ -8,9 +8,17 @@
 
 import UIKit
 
+protocol SelectProfilDelegate {
+    func userSelectProfilName(image: String)
+}
+
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
     
+    var SelectProfilDelegate : SelectProfilDelegate?
+    
     let data = DataSet()
+    var recipes:[JobImpersonCategory]!
+    var recipeToPass: JobImpersonCategory!
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 1 {
@@ -65,6 +73,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cellDimension = (width / 2) - 15
         return CGSize(width: cellDimension, height: cellDimension)
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+      let  imageProfilee = recipes[indexPath.item].imageName
+        SelectProfilDelegate?.userSelectProfilName(image: imageProfilee)
+      performSegue(withIdentifier: "toProfil", sender: self)
+    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let detailsVC = segue.destination as? HeaderReusableView1 {
+//            detailsVC.selectedRecipe = recipeToPass
+//        }
+//    }
+
+    
+    
+    
     
 
     override func viewDidLoad() {
