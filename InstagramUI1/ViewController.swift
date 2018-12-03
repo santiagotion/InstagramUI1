@@ -9,13 +9,13 @@
 import UIKit
 
 protocol SelectProfilDelegate {
-    func userSelectProfilName(image: String)
+    func userSelectProfilName(image : String)
 }
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    var SelectProfilDelegate : SelectProfilDelegate?
-    
+    var SelectProfileDelegate : SelectProfilDelegate?
+    var categoryToPass: String!
     let data = DataSet()
     var recipes:[JobImpersonCategory]!
     var recipeToPass: JobImpersonCategory!
@@ -33,10 +33,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 1 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PopulaInpersoTableCell2", for: indexPath) as! PopulaInpersoTableCell
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "PopulaInpersoTableCell2", for: indexPath) as? PopulaInpersoTableCell {
+           
             cell.configureCell(category: data.categories2[indexPath.row])
         return cell
         }
+            
+        }
+        
+        
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "PopulaInpersoTableCell", for: indexPath)
         return cell
     }
@@ -75,13 +81,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-      let  imageProfilee = recipes[indexPath.item].imageName
-        SelectProfilDelegate?.userSelectProfilName(image: imageProfilee)
+      categoryToPass = data.categories[indexPath.row].imageName
+        SelectProfileDelegate?.userSelectProfilName(image: categoryToPass)
+        
+        print(categoryToPass)
       performSegue(withIdentifier: "toProfil", sender: self)
     }
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let detailsVC = segue.destination as? HeaderReusableView1 {
+//        if let detailsVC =  {
 //            detailsVC.selectedRecipe = recipeToPass
 //        }
 //    }

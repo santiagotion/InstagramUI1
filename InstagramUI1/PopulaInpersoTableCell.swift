@@ -27,7 +27,9 @@ class PopulaInpersoTableCell: UITableViewCell {
         PostImage.image = UIImage(named: category.imageName)
         username.text = category.title
     }
-
+//    func configureCell(recipe: Recipe) {
+//        recipeImg.image = UIImage(named: recipe.imageName)
+//    }
 }
 
 

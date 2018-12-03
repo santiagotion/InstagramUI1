@@ -8,33 +8,42 @@
 
 import UIKit
 
-class HeaderReusableView1: UICollectionReusableView, UICollectionViewDataSource, UICollectionViewDelegate, SelectProfilDelegate {
+class HeaderReusableView1: UICollectionReusableView, UICollectionViewDataSource, UICollectionViewDelegate {
     
     let Data = DataSet()
     var recipes:[JobImpersonCategory]!
     
+    
+    
+//    func configureCell(category: JobImpersonCategory) {
+//        profilImage.image = UIImage(named: category.imageName)
+//        //        username.text = category.title
+//    }
     func userSelectProfilName(image: String) {
-    
-    
+//      var  selectedRecipe = image
+        profilImage.image = UIImage(named: image)
     }
-    
-    func configureCell(category: JobImpersonCategory) {
-        profilImage.image = UIImage(named: category.imageName)
-        //        username.text = category.title
-    }
-    
     @IBOutlet weak var profilImage: UIImageView!
+    
+    
     var selectedRecipe = ""
     
     
     
     
+
+    
+   
+    
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+//        SelectProfilDelegate = self
         collectionview.delegate = self
         collectionview.dataSource = self
+        
+//         profilImage.image = UIImage(named: selectedRecipe.imageName)
         
 //
             
