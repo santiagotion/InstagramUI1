@@ -80,6 +80,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return CGSize(width: cellDimension, height: cellDimension)
     }
     
+    
+    
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
       categoryToPass = data.categories[indexPath.row].imageName
         SelectProfileDelegate?.userSelectProfilName(image: categoryToPass)

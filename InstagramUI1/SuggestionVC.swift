@@ -10,6 +10,7 @@ import UIKit
 //
 class SuggestionVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var fiof: InstagramActivityIndicator!
     
     let data = DataSet()
     
@@ -24,6 +25,15 @@ class SuggestionVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     }
     
     
+    @IBAction func hh(_ sender: Any) {
+        guard let indicator = fiof else { return }
+        
+        if indicator.isAnimating {
+            indicator.stopAnimating()
+        } else {
+            indicator.startAnimating()
+        }
+    }
     
     
     

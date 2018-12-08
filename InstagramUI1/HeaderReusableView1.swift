@@ -13,9 +13,22 @@ class HeaderReusableView1: UICollectionReusableView, UICollectionViewDataSource,
     let Data = DataSet()
     var recipes:[JobImpersonCategory]!
     
+    @IBOutlet weak var jolo: InstagramActivityIndicator!
     
+    @IBOutlet weak var juio: InstagramActivityIndicator!
+    @IBOutlet weak var holi: UIButton!
     
-//    func configureCell(category: JobImpersonCategory) {
+    @IBAction func joli(_ sender: Any) {
+        
+        guard let indicator = juio  else { return }
+        
+        if indicator.isAnimating {
+            indicator.stopAnimating()
+        } else {
+            indicator.startAnimating()
+        }
+    }
+    //    func configureCell(category: JobImpersonCategory) {
 //        profilImage.image = UIImage(named: category.imageName)
 //        //        username.text = category.title
 //    }
